@@ -35,7 +35,8 @@ public class ArrayExample {
         */
 
         //ARRAYS IN METHODS
-        change(bucky);
+        //change(bucky);
+
 
 
 
