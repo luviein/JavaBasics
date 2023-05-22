@@ -16,12 +16,21 @@ public class ArrayExample {
         int bucky[] = { 1, 2, 3, 4, 5 };
 
         // summing elements of array (5 + 4 + 3 + 2 + 1)
+        /* 
         int sum = 0;
         for (int counter = 0; counter < bucky.length; counter++) {
-            sum += bucky[counter];
+        sum += bucky[counter];
 
         }
-        System.out.println("Sum of these numbers: " + sum);
+        System.out.println("Sum of these numbers: " + sum); 
+        */
+        
+        //enhanced for loop
+        int total = 0;
+        for(int i : bucky){
+            total += i;
+        }
+        System.out.println(total);
     }
 
 }
