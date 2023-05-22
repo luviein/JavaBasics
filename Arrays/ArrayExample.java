@@ -15,7 +15,7 @@ public class ArrayExample {
     public static void main(String[] args) {
         int bucky[] = { 1, 2, 3, 4, 5 };
 
-        // summing elements of array (5 + 4 + 3 + 2 + 1)
+        // SUMMING ELEMENTS OF ARRAY (5 + 4 + 3 + 2 + 1)
         /* 
         int sum = 0;
         for (int counter = 0; counter < bucky.length; counter++) {
@@ -25,12 +25,31 @@ public class ArrayExample {
         System.out.println("Sum of these numbers: " + sum); 
         */
         
-        //enhanced for loop
+        //ENHANCED FOR LOOP
+        /* 
         int total = 0;
         for(int i : bucky){
             total += i;
         }
         System.out.println(total);
+        */
+
+        //ARRAYS IN METHODS
+        change(bucky);
+
+
+
+
+    }
+
+    public static void change(int x[]){
+        for(int counter = 0; counter < x.length; counter ++){
+            x[counter] += 5; //adds 5 to each value in the array
+        }
+        
+        for(int j : x){
+            System.out.println(j);
+        }
     }
 
 }
